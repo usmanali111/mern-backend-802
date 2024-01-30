@@ -2,7 +2,7 @@ import express from 'express'
 import { SignUp, getAllUser } from '../controller/user-controller.js';
 import { CreateBlogPost, getBlogPosts, getBlogPost } from '../controller/blog-post-controller.js';
 // import Upload from '../middelware/uploadImage.js';
-import { Routes } from 'react-router-dom';
+// import { Routes } from 'react-router-dom';
 
 
 
