@@ -1,12 +1,8 @@
 import mongoose from "mongoose";
 
 const Connection = async () => {
-    // const URL = "mongodb+srv://uali43924:shani@555@cluster0.wanrnz9.mongodb.net/?retryWrites=true&w=majority";
-    // const URL = "mongodb+srv://uali43924:shani@555@cluster0.wanrnz9.mongodb.net/?retryWrites=true&w=majority"
-    
-    // const URI = "mongodb+srv://uali43924:hgRmT2cUDsJM83nF@cluster0.wanrnz9.mongodb.net/?retryWrites=true&w=majority"
-    
-    const URI = "mongodb+srv://uali43924:hgRmT2cUDsJM83nF@cluster0.wanrnz9.mongodb.net/?retryWrites=true&w=majority"
+        
+    const URI = "mongodb+srv://uali43924:020aWtpu0U15AihI@cluster0.wanrnz9.mongodb.net/"
     
     try {
         // await mongoose.connect(URL ,{ useNewUrlParser: true } );

@@ -1,7 +1,7 @@
 import express from 'express'
-import { SignUp, getAllUser } from '../controller/user-controller.js';
+import { SignUp, getAllUser,Login } from '../controller/user-controller.js';
 import { CreateBlogPost, getBlogPosts, getBlogPost } from '../controller/blog-post-controller.js';
-// import Upload from '../middelware/uploadImage.js';
+import Upload from '../../Server/controller/middleware/uploadimage.js';
 // import { Routes } from 'react-router-dom';
 
 
@@ -15,7 +15,8 @@ router.get('/', (req, res) => {
 
 
 // user authentication routes
-// router.post('/create_user', Upload.single('image'), SignUp)
+router.post('/create_user', Upload.single('image'), SignUp)
+router.post('/login_user', Login)
 router.get('/get_users', getAllUser)
 
 //blogs, post Routes
